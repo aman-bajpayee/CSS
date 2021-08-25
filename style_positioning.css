@@ -1,0 +1,27 @@
+.container{
+  height: 400px;
+  width: 400px;
+  margin: 40px;
+  padding: 10px;
+  background-color: linen;
+}
+
+.item{
+  margin: 10px;
+  height: 50px;
+  width: 50px;
+  background-color: mediumslateblue;
+}
+/* relative from original
+    absolute from parent */
+.container.two > .item.five{
+  background-color: brown;
+  position: relative;
+  left: 20px;
+}
+
+.container.two > .item.four{
+  background-color: brown;
+  position: fixed;
+  left: 50px;
+}
